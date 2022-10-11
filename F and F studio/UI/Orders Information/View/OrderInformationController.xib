@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderInformationController" customModule="F_and_F_studio" customModuleProvider="target">
+            <connections>
+                <outlet property="adressTextField" destination="IaA-R8-i2b" id="3yr-wN-F1c"/>
+                <outlet property="cardTextField" destination="BGp-A9-Sgy" id="NAd-Hj-toh"/>
+                <outlet property="commentTextField" destination="yrh-Ny-6DO" id="C78-XW-W7Y"/>
+                <outlet property="countTextField" destination="9Sn-uk-CjN" id="05q-6K-ZIr"/>
+                <outlet property="datePicker" destination="fqq-m6-vP8" id="ss2-Yr-rFN"/>
+                <outlet property="imageView" destination="CWL-Qy-qXJ" id="3C1-4h-4c3"/>
+                <outlet property="nameTextField" destination="zue-9C-teD" id="ecq-PJ-Tbr"/>
+                <outlet property="phoneTextField" destination="OmT-C6-SD9" id="uVv-UU-fGo"/>
+                <outlet property="priceTextField" destination="95b-zu-E0Y" id="yNK-R9-Rl7"/>
+                <outlet property="selfPriceTextField" destination="OfZ-iG-6Q2" id="Eds-yb-IdT"/>
+                <outlet property="typeTextField" destination="EkJ-9c-Ian" id="JhO-0u-llk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjX-H7-1eL">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mEv-Y3-YrH">
+                            <rect key="frame" x="16" y="16" width="358" height="946.33333333333337"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="with alfa" translatesAutoresizingMaskIntoConstraints="NO" id="CWL-Qy-qXJ">
+                                    <rect key="frame" x="35.666666666666657" y="0.0" width="286.66666666666674" height="286.33333333333331"/>
+                                    <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="CWL-Qy-qXJ" secondAttribute="height" id="oXZ-28-PVp"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="D8L-o7-m61">
+                                    <rect key="frame" x="0.0" y="302.33333333333326" width="358" height="644"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkW-3A-I2D">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8O-KI-z7t">
+                                                    <rect key="frame" x="0.0" y="0.0" width="38.666666666666664" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fqq-m6-vP8">
+                                                    <rect key="frame" x="38.666666666666657" y="0.0" width="319.33333333333337" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="xEw-hw-YnL"/>
+                                                    </constraints>
+                                                </datePicker>
+                                            </subviews>
+                                        </stackView>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IaA-R8-i2b" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="66" width="358" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="xnv-gY-S71"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="KKQ-yb-I0l"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zue-9C-teD" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="132" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="WsJ-ER-dGr"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OmT-C6-SD9" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="198.00000000000006" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="55d-JM-HHJ"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Открытка" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGp-A9-Sgy" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="264.00000000000006" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="XEj-G1-YkF"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Вид" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-9c-Ian" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="330.00000000000006" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="r4T-hG-NkZ"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Количество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Sn-uk-CjN" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="396.00000000000006" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="7eG-75-Obp"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Цена" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95b-zu-E0Y" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="462.00000000000006" width="358" height="49.999999999999943"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="8Mh-Vl-dys"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Себестоимость" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-iG-6Q2" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="528" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="R36-Qy-tnf"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Комментарий" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrh-Ny-6DO" customClass="TextField" customModule="F_and_F_studio" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="594" width="358" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="bto-fS-5UR"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="CWL-Qy-qXJ" firstAttribute="width" secondItem="mEv-Y3-YrH" secondAttribute="width" multiplier="0.8" id="AYB-Hx-cbF"/>
+                                <constraint firstItem="D8L-o7-m61" firstAttribute="width" secondItem="mEv-Y3-YrH" secondAttribute="width" id="WtO-JD-H2l"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mEv-Y3-YrH" secondAttribute="trailing" constant="16" id="6pz-SR-nbd"/>
+                        <constraint firstItem="mEv-Y3-YrH" firstAttribute="top" secondItem="XjX-H7-1eL" secondAttribute="top" constant="16" id="ECe-PA-JGx"/>
+                        <constraint firstItem="mEv-Y3-YrH" firstAttribute="width" secondItem="XjX-H7-1eL" secondAttribute="width" constant="-32" id="JpN-JG-t4s"/>
+                        <constraint firstItem="mEv-Y3-YrH" firstAttribute="leading" secondItem="XjX-H7-1eL" secondAttribute="leading" constant="16" id="elI-NC-QIA"/>
+                        <constraint firstAttribute="bottom" secondItem="mEv-Y3-YrH" secondAttribute="bottom" constant="16" id="kPW-i7-Do7"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XjX-H7-1eL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9oI-zv-QSn"/>
+                <constraint firstItem="XjX-H7-1eL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kxg-fs-h3H"/>
+                <constraint firstItem="XjX-H7-1eL" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="lm0-wB-S4f"/>
+                <constraint firstItem="XjX-H7-1eL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yXh-ot-8yB"/>
+            </constraints>
+            <point key="canvasLocation" x="64.615384615384613" y="94.549763033175353"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="with alfa" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
